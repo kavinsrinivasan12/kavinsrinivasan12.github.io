@@ -1035,14 +1035,14 @@ footer .container {
   gap: 10px;
   font-size: 11.5px;
   color: var(--text-faint);
-}
-/* =========================
+}/* =========================
    MEETUPS
 ========================= */
 
 .meetup-card {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
+  align-items: stretch; /* Ensures both text and image column stretch equally */
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -1073,7 +1073,7 @@ footer .container {
 }
 
 .meetup-content .meetup-subdt {
-  font-size: 10px; /* Reduced font size here */
+  font-size: 10px;
   color: #ffffff;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -1098,16 +1098,22 @@ footer .container {
 }
 
 .meetup-image {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Fills the grid row height completely */
   min-height: 400px;
   overflow: hidden;
   background: #0b0b0d;
 }
 
 .meetup-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: cover; /* Ensures image covers the area nicely without distortion */
   transition: transform 0.5s ease;
 }
 
@@ -1162,6 +1168,10 @@ footer .container {
   .meetup-image {
     min-height: 280px;
     order: -1;
+  }
+  
+  .meetup-image img {
+    position: relative; /* Switch back to relative for mobile block flow */
   }
 
   .meetup-content {
