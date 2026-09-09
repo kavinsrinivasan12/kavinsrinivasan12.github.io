@@ -293,6 +293,8 @@ function initDashboard3D(containerId) {
   autoRotate();
 }
 
+ 
 initDashboard3D("p1-3d");
 initDashboard3D("p2-3d");
 initDashboard3D("p3-3d");
+
