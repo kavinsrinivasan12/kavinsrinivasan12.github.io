@@ -210,24 +210,34 @@
             <div class="vals">
               <span>GCP BigQuery</span><span>MYSQL</span><span>Window Functions & CTEs</span
               ><span>Stored Procedures</span>
-              <span>Advanced Aggregations</span>
+              <span>Data Modeling</span>
+              <span>Star Schema Design</span>
             </div>
           </div>
           <div class="skill-row">
             <div class="label">Analytics &amp; BI</div>
             <div class="vals">
               <span>Power BI Desktop</span><span>Power Query & DAX</span
-              ><span>Dashboard Design & Storytelling</span><span>Data Visualization (including AI Visuals)</span>
-              <span>KPI Tracking & Reporting</span> <span>Interactive Filtering & Drill-downs</span>
+              ><span>Row-Level Security (RLS)</span><span>Data Visualization (including AI Visuals)</span>
+              <span>KPI Tracking & Reporting</span> <span>Interactive Dashboards</span>
             </div>
           </div>
           <div class="skill-row">
             <div class="label">Programming</div>
             <div class="vals">
-              <span>Python</span><span>Data Manipulation (Pandas & Numpy)</span><span>Exploratory Data Analysis (EDA)</span
-              ><span>Feature Engineering & Selection</span><span>Statistical Analysis</span><span>Data Cleaning & Preprocessing</span>
+              <span>Python</span><span>Data Manipulation (Pandas & Numpy)</span>
+              <span>Feature Engineering & Selection</span><span>Statistical Analysis</span><span>Data Cleaning & Preprocessing</span>
             </div>
           </div>
+
+          <div class="skill-row">
+            <div class="label">Business & Reporting</div>
+            <div class="vals">
+              <span>Exploratory Data Analysis (EDA)</span><span>Root Cause Investigation</span>
+              <span>Stakeholder Reporting</span><span>Pattern & Trend Identification</span>
+            </div>
+          </div>
+
           <div class="skill-row">
             <div class="label">Domain &amp; Experience</div>
             <div class="vals">
@@ -303,12 +313,14 @@
           
           <div class="media-row">
             <div class="para1" id="pdfProject1">
+              <p style="margin-bottom: 10px;">
+                <strong style="color: var(--amber);">Problem:</strong> Banks often struggle to get a clear view of loan performance and risk because the data is scattered across disconnected records, making it hard for teams to spot repayment issues or risky lending patterns before they become costly.
+              </p>
+              <p style="margin-bottom: 10px;">
+                <strong style="color: var(--amber);">Solution:</strong> I built and structured an 8-table relational database with close to 305K records in BigQuery, then wrote SQL queries using CTEs, window functions, and multi-table joins to dig into borrower behavior and loan trends.
+              </p>
               <p>
-
-                Designed scalable database architecture in Google BigQuery with normalized relational schema 
-                and referential integrity. Built comprehensive data models connecting loans, customers, accounts
-                 and transactions. Conducted advanced SQL analysis using CTEs, window functions and aggregate functions 
-                 to identify loan defaults, dormant accounts and over-leveraged customers and to support risk management.
+                <strong style="color: var(--amber);">Impact:</strong> Answered 13 real business questions a bank might actually ask, giving a clearer picture of loan performance and default patterns while sharpening my SQL skills for BFSI-focused analyst roles.
               </p>
             </div>
             <div class="media-3d dashboard-3d" id="p1-3d">
@@ -337,7 +349,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal">
+       <div class="project-card reveal">
           <div class="project-head">
             <h3>Adventure Works</h3>
             <div class="dt">August 2026 · Power BI · Power Query · Data Modeling</div>
@@ -345,13 +357,14 @@
           
           <div class="media-row">
             <div class="para1" id="pdfProject1">
+              <p style="margin-bottom: 10px;">
+                <strong style="color: var(--amber);">Problem:</strong> Sales, product and customer data lived in separate raw files with no clear structure, so it was hard to get a real read on revenue trends or how products and customers were actually performing.
+              </p>
+              <p style="margin-bottom: 10px;">
+                <strong style="color: var(--amber);">Solution:</strong> I cleaned and shaped that raw data into a proper star schema directly in Power BI, then built out a 4-page dashboard – covering executive KPIs, sales trends, product and returns performance and customer behavior – using over 20 custom DAX measures along with features like AI-powered Key Influencers, decomposition trees, bookmarks, anomaly detection and drill-through pages.
+              </p>
               <p>
-                
-                   Built Power BI dashboards analyzing $24.9M in revenue across 3 years (2020-2022). 
-                   Created an executive dashboard tracking KPIs, a product dashboard with drill-downs and price adjustments, 
-                   a customer dashboard profiling by income/occupation, and a geographic map dashboard for regional analysis. 
-                   Implemented advanced DAX measures and Power Query transformations to enable trend analysis and forecast overlays.
-              
+                <strong style="color: var(--amber);">Impact:</strong> Turned messy, disconnected files into 4-page interactive dashboards people could actually explore and make decisions from, letting me practice real end-to-end BI work – from data cleaning to polished, decision-ready visuals.
               </p>
             </div>
             <div class="media-3d dashboard-3d" id="p2-3d">
@@ -379,23 +392,21 @@
           </div>
         </div>
 
-        <div class="project-card reveal">
+      <div class="project-card reveal">
           <div class="project-head">
             <h3>Customer Shopping Behavior Analysis</h3>
             <div class="dt">September 2026 · Python · MySQL · Power BI</div>
           </div>
           <div class="media-row">
             <div class="para1" id="pdfProject1">
-              <p>  
-
-          Designed a customer analytics solution analyzing purchasing behavior, product performance, 
-          and subscription metrics through CSV data integration. Performed exploratory data analysis 
-          in Python to uncover distribution patterns and spending trends; engineered features for 
-          customer segmentation and discount propensity. Conducted advanced SQL analysis using CTEs 
-          and window functions to identify high-discount products, compare shipping type impact, and 
-          quantify subscription-driven patterns. Developed a Power BI dashboard visualizing revenue trends 
-          by demographics, customer segments, and product ratings.
-
+              <p style="margin-bottom: 10px;">
+                <strong style="color: var(--amber);">Problem:</strong> The business had thousands of customer transactions, but no clear view of who was spending the most or whether discounts and subscriptions were working, so marketing decisions relied on gut feeling.
+              </p>
+              <p style="margin-bottom: 10px;">
+                <strong style="color: var(--amber);">Solution:</strong> I cleaned the raw data in Python, wrote SQL queries on spending by gender, age group, subscriptions, and discounts, and segmented customers into New, Returning and Loyal. I then built an interactive Power BI dashboard on a dataset of 3.9K customers.
+              </p>
+              <p>
+                <strong style="color: var(--amber);">Impact:</strong> The dashboard gave a clear picture of 233K in total revenue, with clothing as the top category and young adults as the top spenders. Discounted purchases made up about 43% of revenue, while only 27% of customers were subscribed, pointing to room to grow subscriptions.
               </p>
             </div>
             <div class="media-3d dashboard-3d" id="p3-3d">
@@ -410,7 +421,6 @@
             <div><strong>233K</strong><span>Revenue Analyzed</span></div>
             <div><strong>3.9K</strong><span>Records Processed</span></div>
             <div><strong>1</strong><span>Dashboard Delivered</span></div>
-
           </div>
           <div class="project-footer">
             <div class="tool-pills">
@@ -425,42 +435,6 @@
             >
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="more">
-      <div class="container two-col">
-        <div>
-          <div class="eyebrow">Certifications</div>
-          <h2 class="sec-h" style="font-size: 26px">Continuing to level up.</h2>
-          <div class="reveal">
-            <div class="cert-row">
-              <h4>Data Analytics Job Simulation</h4>
-              <p>Deloitte - Aug 2026</p>
-            </div>
-            <div class="cert-row">
-              <h4>SQL Professional</h4>
-              <p>Hacker Rank - Aug 2026</p>
-            </div>
-            <div class="cert-row">
-              <h4>Python for Data Science</h4>
-              <p>IBM - Mar 2024</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="eyebrow">Education</div>
-          <h2 class="sec-h" style="font-size: 26px">The foundation.</h2>
-          <div class="reveal">
-            <div class="edu-row2">
-              <h4>B.Tech - Artificial Intelligence & Data Science</h4>
-              <p>Mahendra Engineering College — 2020–2024</p>
-              <div class="score">CGPA: 8.4</div>
-            </div>
-          
-          </div>
-        </div>
-      </div>
     </section>
  <section id="Events">
   <div class="container">
