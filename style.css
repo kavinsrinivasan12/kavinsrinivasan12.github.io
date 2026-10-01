@@ -1196,3 +1196,91 @@ footer .container {
     margin-top: 20px;
   }
 }
+
+/* =========================================
+   CREDENTIALS (SCALED DOWN FONT SIZES)
+========================================= */
+
+#credentials {
+  padding: 90px 0;
+  background: var(--bg);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+@media (max-width: 860px) {
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* Eyebrow: reduced to 10.5px */
+.two-col .eyebrow {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 16px;
+}
+
+/* Main Section Heading: reduced from 34px to 26px */
+.two-col .sec-h {
+  font-family: "Sora", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+/* Row dividers */
+.cert-row,
+.edu-row2 {
+  padding: 18px 0 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.cert-row:first-of-type,
+.edu-row2:first-of-type {
+  padding-top: 0;
+}
+
+/* Card titles: reduced from 18.5px to 15.5px */
+.cert-row h4,
+.edu-row2 h4 {
+  font-family: "Sora", sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+
+/* Descriptions: reduced from 13.5px to 12.5px */
+.cert-row p,
+.edu-row2 p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: #8e8e96;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Score/CGPA: reduced from 13px to 12px */
+.edu-row2 .score {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--amber);
+  margin-top: 8px;
+}
